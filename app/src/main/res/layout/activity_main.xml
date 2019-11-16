@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="63dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSubmit"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSearchZipCode"
+        app:layout_constraintStart_toStartOf="@+id/editTextSearchZipCode"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearchZipCode"
+        tools:text="Enter Your Name" />
+
+    <EditText
+        android:id="@+id/editTextBirdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Name of Bird"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSearchZipCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSearchZipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Zip Code"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextBirdName"
+        app:layout_constraintStart_toStartOf="@+id/editTextBirdName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBirdName" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="258dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
