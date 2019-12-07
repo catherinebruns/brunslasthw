@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImportanceActivity">
+
+    <TextView
+        android:id="@+id/textViewHighestImportanceBird"
+        android:layout_width="106dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="133dp"
+        android:text="Highest Importance Bird"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBirdZipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="178dp"
+        android:text="Zip Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHighestImportanceBird" />
+
+    <TextView
+        android:id="@+id/textViewImportanceNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="296dp"
+        android:text="Importance Rating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBirdZipCode" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="197dp"
+        android:text="Email "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewImportanceNumber" />
+
+    <Button
+        android:id="@+id/buttonHighestImportance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="169dp"
+        android:layout_marginBottom="138dp"
+        android:text="Update Highest Importance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
